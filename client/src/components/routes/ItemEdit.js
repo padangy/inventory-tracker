@@ -17,8 +17,8 @@ function ItemEdit() {
   useEffect(() => {
     const fetchData = async () => {
       try{
-        const response = await axios(`http://localhost:3000/api/item/${id}`)
-        setItems(response.data)
+        const response = await axios(`http://localhost:3000/api/items/${id}`)
+        setItem(response.data)
       }
       catch(error) {
         console.log(error)
